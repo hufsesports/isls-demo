@@ -1,0 +1,61 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>ISLS SaaS Mock · Admin Dashboard</title><link rel="stylesheet" href="styles.css"/></head>
+<body>
+<div class="topbar"><div class="topbar-inner">
+  <div class="brand"><div class="logo"></div><div><h1>ISLS · International Sports Leadership</h1><div class="small">Post-program Support SaaS (Demo)</div></div></div>
+  <div class="badges"><span class="badge accent">SaaS UI v2</span><span class="badge">Cohort: 2026-A</span><span class="badge">Role: Admin</span></div>
+  <div class="search"><span class="small">⌘</span><input placeholder="Search modules, mentors, alumni…"/></div>
+</div></div>
+
+<div class="container">
+  <div class="title-row">
+    <div><h2 class="page-title">Admin Dashboard</h2><p class="subtitle">운영자용 지표 대시보드: 코호트 건강도와 운영 액션을 관리합니다.</p></div>
+    <div class="actions"><a class="btn" href="home.html">Back</a><a class="btn primary" href="#">Load Demo Data</a></div>
+  </div>
+  
+<div class="grid cols-4">
+  <div class="card kpi"><div><h3>Enrolled</h3><div class="meta">Cohort 2026-A</div><div class="value">24</div></div><div class="delta good">+2</div></div>
+  <div class="card kpi"><div><h3>At-risk</h3><div class="meta">Low progress/no-shows</div><div class="value">3</div></div><div class="delta bad">Action</div></div>
+  <div class="card kpi"><div><h3>Outputs Pending</h3><div class="meta">Draft/Review</div><div class="value">7</div></div><div class="delta warn">Remind</div></div>
+  <div class="card kpi"><div><h3>Mentor Capacity</h3><div class="meta">Open slots</div><div class="value">11</div></div><div class="delta good">OK</div></div>
+</div>
+
+<div class="split" style="margin-top:12px">
+  <div class="card">
+    <h3>Operational Actions</h3><div class="meta">이번 주 운영 우선순위</div>
+    <table class="table" style="margin-top:12px"><thead><tr><th>Priority</th><th>Action</th><th>Owner</th><th>Status</th></tr></thead>
+      <tbody>
+        <tr><td><span class="pill" style="border-color:rgba(251,113,133,.35);color:var(--bad)">High</span></td><td>Remind at-risk learners</td><td>Admin</td><td>Pending</td></tr>
+        <tr><td><span class="pill" style="border-color:rgba(251,191,36,.35);color:var(--warn)">Med</span></td><td>Assign pitch rehearsal mentors</td><td>Ops</td><td>In progress</td></tr>
+        <tr><td><span class="pill" style="border-color:rgba(52,211,153,.35);color:var(--good)">Low</span></td><td>Publish next module schedule</td><td>Faculty</td><td>Ready</td></tr>
+      </tbody>
+    </table>
+    <div class="row" style="margin-top:12px"><a class="btn primary" href="#">Send batch message</a><a class="btn" href="#">Export report</a><a class="btn" href="#">Announcement</a></div>
+  </div>
+  <div class="card">
+    <h3>Cohort Health</h3><div class="meta">Progress + output + mentoring</div>
+    <div style="display:flex;justify-content:center;margin-top:10px"><svg width="280" height="280" viewBox="0 0 280 280"><polygon points="140.0,120.4 158.6,133.9 151.5,155.9 128.5,155.9 121.4,133.9" fill="none" stroke="rgba(255,255,255,.10)" stroke-width="1"/><polygon points="140.0,100.8 177.3,127.9 163.0,171.7 117.0,171.7 102.7,127.9" fill="none" stroke="rgba(255,255,255,.10)" stroke-width="1"/><polygon points="140.0,81.2 195.9,121.8 174.6,187.6 105.4,187.6 84.1,121.8" fill="none" stroke="rgba(255,255,255,.10)" stroke-width="1"/><polygon points="140.0,61.6 214.6,115.8 186.1,203.4 93.9,203.4 65.4,115.8" fill="none" stroke="rgba(255,255,255,.10)" stroke-width="1"/><polygon points="140.0,42.0 233.2,109.7 197.6,219.3 82.4,219.3 46.8,109.7" fill="none" stroke="rgba(255,255,255,.10)" stroke-width="1"/><line x1="140.0" y1="140.0" x2="140.0" y2="42.0" stroke="rgba(255,255,255,.10)" stroke-width="1"/><line x1="140.0" y1="140.0" x2="233.2" y2="109.7" stroke="rgba(255,255,255,.10)" stroke-width="1"/><line x1="140.0" y1="140.0" x2="197.6" y2="219.3" stroke="rgba(255,255,255,.10)" stroke-width="1"/><line x1="140.0" y1="140.0" x2="82.4" y2="219.3" stroke="rgba(255,255,255,.10)" stroke-width="1"/><line x1="140.0" y1="140.0" x2="46.8" y2="109.7" stroke="rgba(255,255,255,.10)" stroke-width="1"/><polygon points="140.0,65.5 203.4,119.4 187.2,205.0 98.5,197.1 80.3,120.6" fill="rgba(93,214,255,.20)" stroke="rgba(93,214,255,.95)" stroke-width="2"/><text x="140.0" y="24.4" text-anchor="middle" font-size="12" fill="rgba(231,239,255,.78)">Progress</text><text x="250.0" y="104.3" text-anchor="start" font-size="12" fill="rgba(231,239,255,.78)">Outputs</text><text x="208.0" y="233.6" text-anchor="start" font-size="12" fill="rgba(231,239,255,.78)">Mentoring</text><text x="72.0" y="233.6" text-anchor="end" font-size="12" fill="rgba(231,239,255,.78)">Engagement</text><text x="30.0" y="104.3" text-anchor="end" font-size="12" fill="rgba(231,239,255,.78)">Readiness</text></svg></div>
+    <div class="row" style="margin-top:10px"><span class="pill">Hotspot: Outputs</span><span class="pill">Next: review clinic</span></div>
+  </div>
+</div>
+
+<div class="card" style="margin-top:12px">
+  <h3>Cohort Table</h3><div class="meta">Learner-level summary (mock)</div>
+  <table class="table" style="margin-top:12px"><thead><tr><th>Name</th><th>Track</th><th>Progress</th><th>Outputs</th><th>Mentoring</th><th>Flag</th></tr></thead>
+    <tbody>
+      <tr><td>Kim (Athlete)</td><td>Athlete Transition</td><td>72%</td><td>Final</td><td>2 sessions</td><td><span class="pill" style="color:var(--good);border-color:rgba(52,211,153,.35)">OK</span></td></tr>
+      <tr><td>Park (Admin)</td><td>IF Governance</td><td>41%</td><td>Draft</td><td>0 sessions</td><td><span class="pill" style="color:var(--bad);border-color:rgba(251,113,133,.35)">At-risk</span></td></tr>
+      <tr><td>Lee (Referee)</td><td>Integrity</td><td>58%</td><td>Review</td><td>1 session</td><td><span class="pill" style="color:var(--warn);border-color:rgba(251,191,36,.35)">Watch</span></td></tr>
+    </tbody>
+  </table>
+</div>
+
+</div>
+
+<div class="tabbar"><div class="tabbar-inner"><a class="tab active" href="home.html"><div class="ico"></div><span>Home</span></a>
+<a class="tab" href="lms.html"><div class="ico"></div><span>LMS</span></a>
+<a class="tab" href="output.html"><div class="ico"></div><span>Output</span></a>
+<a class="tab" href="mentoring.html"><div class="ico"></div><span>Mentoring</span></a>
+<a class="tab" href="alumni.html"><div class="ico"></div><span>Alumni</span></a>
+<a class="tab" href="coach.html"><div class="ico"></div><span>AI Coach</span></a>
+</div></div>
+</body></html>
