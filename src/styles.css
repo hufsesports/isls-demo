@@ -94,3 +94,6 @@ a{color:inherit;text-decoration:none}
 /* ===== Polished demo cards ===== */
 .demo-card{display:block;transition:transform .15s ease, border-color .15s ease}
 .demo-card:hover{transform:translateY(-2px);border-color:rgba(93,214,255,.35)}
+
+/* Demo radar chart */
+.radar-wrap{width:100%;max-width:360px;aspect-ratio:1/1;margin:6px auto 2px;}
